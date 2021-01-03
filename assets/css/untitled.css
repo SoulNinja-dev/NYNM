@@ -1,0 +1,28 @@
+@media (min-width: 576px) {
+    .d-flex.d-xl-flex.flex-grow-1.justify-content-center.align-items-center.align-content-center.justify-content-xl-center.align-items-xl-center {
+      width: 492px !important;
+      height: 257px !important;
+      border-radius: 5px 5px 2px 2px;
+    }
+  }
+  
+  @media (min-width: 316px) {
+    .d-flex.d-xl-flex.flex-grow-1.justify-content-center.align-items-center.align-content-center.justify-content-xl-center.align-items-xl-center {
+      height: 250px !important;
+    }
+  }
+  
+  .col {
+  }
+  
+  @media (min-width: 992px) {
+    .d-flex.d-xl-flex.flex-grow-1.justify-content-center.align-items-center.align-content-center.justify-content-xl-center.align-items-xl-center {
+      width: 441px !important;
+    }
+  }
+  
+  .btn.btn-primary.btn-block.text-white.btn-google.btn-user {
+    /*background-color: green;*/
+  }
+  
+  
