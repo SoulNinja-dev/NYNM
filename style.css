@@ -10,7 +10,9 @@
 body{
     min-height: 100vh;
     color:white;
-    background-image: url(assets/img/fireworks.jpg);
+    background: #403B4A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #E7E9BB, darkgrey);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #E7E9BB, darkgrey); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-repeat: no-repeat;
     font-family: 'Fjalla One', sans-serif;
 }
@@ -26,13 +28,19 @@ header, form{
     align-items: center;
 }
 
-form input, form button{
+form input{
+    padding: 0.5rem;
+    font-size: 18px;
+    border: none;
+    background: white;
+    border-radius: 5px 0px 0px 5px;
+}
+form button{
     padding: 0.5rem;
     font-size: 18px;
     border: none;
     background: white;
 }
-
 form button{
     color:#17a2b8;
     cursor: pointer;
@@ -64,10 +72,29 @@ form button:hover{
     align-items: center;
     padding-left: 0.5rem;
     transition: all 1s ease;
+    border-radius: 5px 0px 0px 5px
 }
 
 .item li{
     flex: 1;
+}
+
+.done-btn{
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.delete-btn{
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0px 5px 5px 0px;
 }
 
 .done-btn, .delete-btn{
@@ -78,7 +105,6 @@ form button:hover{
     cursor: pointer;
     font-size: 1rem;
 }
-
 .done-btn{
     background: limegreen;
 }
