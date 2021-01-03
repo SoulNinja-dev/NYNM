@@ -29,6 +29,7 @@
     <header>
         <h1>Resolutions Planner</h1>
     </header>
+    <div class="alert-container container"></div>
     <form>
         <input type="text" class="res-input">
         <button class="res-btn" type="submit">
@@ -36,8 +37,13 @@
         </button>
     </form>
     <div class="container">
+        <div class="spinner-border text-dark spinner" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
         <ul class="res-list"></ul>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
     <script src="./app.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
