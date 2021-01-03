@@ -38,6 +38,7 @@ form button{
     font-size: 18px;
     border: none;
     background: white;
+    border-radius: 0px 5px 5px 0px;
     /*box-shadow: 6px 5px 12px 3px black;*/
 }
 form button{
@@ -71,7 +72,7 @@ form button:hover{
     align-items: center;
     padding-left: 0.5rem;
     transition: all 1s ease;
-    border-radius: 5px 0px 0px 5px
+    border-radius: 5px 5px 5px 5px
 }
 
 .item li{
