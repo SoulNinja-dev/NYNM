@@ -1,6 +1,11 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  // Redirect to index page if user is logged in
+  if(sessionStorage.getItem('currentUser')) {
+    location.href='index.html';
+  }
+
   // Toggle the side navigation
   $("#sidebarToggle, #sidebarToggleTop").on('click', function(e) {
     $("body").toggleClass("sidebar-toggled");

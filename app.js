@@ -12,8 +12,12 @@ var firebaseConfig = {
     messagingSenderId: "292900120557",
     appId: "1:292900120557:web:dc65c63a8d0a586d7629e4"
 };
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+if (!firebase.apps.length) {
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+} else {
+    firebase.app(); // if already initialized, use that one
+}
 const db = firebase.firestore();
 
 /* Reference: Dev Ed: Beginner Vanilla Javascript Project Tutorial
