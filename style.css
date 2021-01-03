@@ -31,14 +31,14 @@ form input{
     border: none;
     background: white;
     border-radius: 5px 0px 0px 5px;
-    box-shadow: 6px 5px 12px 3px black; 
+    /*box-shadow: 6px 5px 12px 3px black; */
 }
 form button{
     padding: 0.5rem;
     font-size: 18px;
     border: none;
     background: white;
-    box-shadow: 6px 5px 12px 3px black;
+    /*box-shadow: 6px 5px 12px 3px black;*/
 }
 form button{
     color:#17a2b8;
