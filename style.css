@@ -10,10 +10,7 @@
 body{
     min-height: 100vh;
     color:white;
-    background: #403B4A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #E7E9BB, darkgrey);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #E7E9BB, darkgrey); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-repeat: no-repeat;
+    background-color: #292d3e;
     font-family: 'Fjalla One', sans-serif;
 }
 
@@ -34,12 +31,14 @@ form input{
     border: none;
     background: white;
     border-radius: 5px 0px 0px 5px;
+    box-shadow: 6px 5px 12px 3px black; 
 }
 form button{
     padding: 0.5rem;
     font-size: 18px;
     border: none;
     background: white;
+    box-shadow: 6px 5px 12px 3px black;
 }
 form button{
     color:#17a2b8;
