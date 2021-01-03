@@ -1,6 +1,12 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  // Show Sign Out button if user is logged in
+  if(sessionStorage.getItem('currentUser')) {
+    $('.sign-out-btn').removeClass('d-none');
+  } else {
+    $('.sign-out-btn').addClass('d-none');
+  }
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
